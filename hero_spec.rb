@@ -1,9 +1,12 @@
+# Test for Ruby programm
 require './hero'
 
 describe Hero do
+  # making ojcet before testing
   before do
     @hero = Hero.new 'mike'
   end
+  # various tests
   it "has a capitalized name" do
     expect(@hero.name).to eq 'Mike' # as hero.name == 'Mike'
   end
