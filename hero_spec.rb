@@ -7,16 +7,16 @@ describe Hero do
     @hero = Hero.new 'mike'
   end
   # various tests
-  it "has a capitalized name" do
+  it 'has a capitalized name' do
     expect(@hero.name).to eq 'Mike' # as hero.name == 'Mike'
   end
-  it "can power up" do
+  it 'can power up' do
     expect(@hero.power_up).to eq 110
   end
-  it "can power down" do
+  it 'can power down' do
     expect(@hero.power_down).to eq 90
   end
-  it "displays full hero info" do
+  it 'displays full hero info' do
     expect(@hero.hero_info).to eq 'Mike has a health of 100'
   end
 end
